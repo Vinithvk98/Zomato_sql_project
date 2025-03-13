@@ -10,7 +10,7 @@ SELECT
 	customer_name,
 	dishes,
 	total_orders
-FROM -- table name
+FROM
 	(SELECT 
 		c.customer_id,
 		c.customer_name,
