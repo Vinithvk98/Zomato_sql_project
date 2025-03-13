@@ -8,7 +8,7 @@ This project demonstrates my SQL skills through the analysis of data for **Zomat
 ### 1. **Database Setup**
 - Created a `zomato_db` database, including essential tables such as restaurants, orders, customers, etc.
 - Established relationships between tables using primary and foreign keys to ensure referential integrity.
-- 
+  
 ```sql 
 CREATE DATABASE zomato_db;
 ```
@@ -89,6 +89,45 @@ SELECT * FROM deliveries;
 ### 3. **Data Cleaning & Transformation**
 - Handled missing or null values to ensure data quality.
 - Standardized and transformed data for analysis.
+```sql
+-- Analysis of data
+-- Checking for null values
+SELECT count(*) FROM customers
+WHERE 
+	customer_name IS NULL 
+	OR 
+	reg_date IS NULL
+
+SELECT count(*) FROM restuarents
+WHERE 
+	restaurant_name IS NULL
+	OR 
+	city IS NULL
+	OR
+	opening_hours IS NULL
+
+SELECT count(*) FROM orders
+WHERE 
+	order_item IS NULL
+	OR 
+	order_date IS NULL
+	OR
+	order_time IS NULL
+	OR
+	order_status IS NULL
+	OR
+	total_amount IS NULL
+
+SELECT count(*) FROM riders
+WHERE 
+	rider_id IS NULL
+	OR 
+	rider_name IS NULL
+	OR
+	sign_up IS NULL
+
+```
+
 
 ### 4. **Business Problem Solving**
 - Solved 18 business problems related to Zomato’s operations using advanced SQL queries. Example problems include:
