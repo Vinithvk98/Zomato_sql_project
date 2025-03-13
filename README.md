@@ -8,8 +8,11 @@ This project demonstrates my SQL skills through the analysis of data for **Zomat
 ### 1. **Database Setup**
 - Created a `zomato_db` database, including essential tables such as restaurants, orders, customers, etc.
 - Established relationships between tables using primary and foreign keys to ensure referential integrity.
-```sql  
+- 
+```sql
+ 
 CREATE DATABASE zomato_db;
+
 ```
 ```sql
 CREATE TABLE customers
