@@ -8,16 +8,83 @@ This project demonstrates my SQL skills through the analysis of data for **Zomat
 ### 1. **Database Setup**
 - Created a `zomato_db` database, including essential tables such as restaurants, orders, customers, etc.
 - Established relationships between tables using primary and foreign keys to ensure referential integrity.
+```sql  
+CREATE DATABASE zomato_db;
+```
+```sql
+CREATE TABLE customers
+	(
+		customer_id INT PRIMARY KEY,
+		customer_name VARCHAR(30),
+		reg_date DATE
+	); 
+	
+CREATE TABLE restuarents
+	(
+		restaurant_id INT PRIMARY KEY,
+		restaurant_name VARCHAR(55),
+		city VARCHAR(20) ,
+		opening_hours VARCHAR(55)
+	);
 
+CREATE TABLE orders
+	(
+		order_id INT PRIMARY KEY,
+		customer_id INT, --Comming from customer table
+		restaurant_id INT, -- comming from restuarent table
+		order_item VARCHAR(50),
+		order_date DATE,
+		order_time TIME,
+		order_status VARCHAR(55),
+		total_amount FLOAT
+	);
+
+-- adding fk contraints
+ALTER TABLE orders
+ADD CONSTRAINT fk_customers
+FOREIGN KEY (customer_id)
+REFERENCES customers(customer_id);
+
+	
+-- adding fk contraints
+ALTER TABLE orders
+ADD CONSTRAINT fk_restuarent
+FOREIGN KEY (restaurant_id)
+REFERENCES restuarents(restaurant_id);
+
+CREATE TABLE riders
+	(
+		rider_id INT PRIMARY KEY,
+		rider_name VARCHAR(55),
+		sign_up DATE
+	);
+
+DROP TABLE IF EXISTS diliveries;
+
+CREATE TABLE diliveries
+	(
+		delivery_id INT PRIMARY KEY,
+		order_id INT,   --coming from order table
+		delivery_status VARCHAR(35) ,
+		delivery_time TIME,
+		rider_id INT,  -- coming from riders table
+		CONSTRAINT fk_orders FOREIGN KEY (order_id) REFERENCES orders(order_id),
+		CONSTRAINT fk_riders FOREIGN KEY (rider_id) REFERENCES riders(rider_id)
+	);
+
+```
 ### 2. **Data Import**
 - Imported a sample dataset that includes business-related information like restaurant details, menu items, customer profiles, and order history.
+  ```sql
+  SELECT * FROM TABLE_NAME;
+  ```
 
 ### 3. **Data Cleaning & Transformation**
 - Handled missing or null values to ensure data quality.
 - Standardized and transformed data for analysis.
 
 ### 4. **Business Problem Solving**
-- Solved 20 business problems related to Zomato’s operations using advanced SQL queries. Example problems include:
+- Solved 18 business problems related to Zomato’s operations using advanced SQL queries. Example problems include:
   - Identifying popular restaurants by rating, location, or cuisine.
   - Analyzing customer ordering behavior and trends.
   - Estimating delivery times to optimize operations.
@@ -34,8 +101,6 @@ This project demonstrates my SQL skills through the analysis of data for **Zomat
 - Understanding of database relationships, normalization, and data integrity.
 - Practical application of SQL to solve business challenges.
 
-## Usage Instructions
-1. Clone this repository to your local machine:
 
 # Analysis & Reports
 
