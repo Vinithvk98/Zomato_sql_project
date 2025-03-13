@@ -5,7 +5,7 @@
 
 
 ### Q.1 Write a query to find the top 5 most frequently ordered dishes by customer called "Arjun Mehta" in the last 1 year.
-'''sql 
+```sql
 SELECT 
 	customer_name,
 	dishes,
@@ -27,4 +27,4 @@ FROM
 	ORDER BY 1, 4 DESC) as t1
 WHERE rank <= 5   
 
-'''
+```
