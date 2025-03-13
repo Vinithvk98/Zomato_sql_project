@@ -51,7 +51,7 @@ FROM Orders
 GROUP BY time_slot
 ORDER BY order_count DESC;
 ```
-### Approach 2
+#### Approach 2
 ```sql
 SELECT 
 	FLOOR(EXTRACT(HOUR FROM order_time)/2)*2 as start_time,
