@@ -78,6 +78,14 @@ CREATE TABLE diliveries
   ```sql
   SELECT * FROM TABLE_NAME;
   ```
+ ```sql
+  SELECT * FROM customers;
+SELECT * FROM restuarents;
+SELECT * FROM orders;
+SELECT * FROM riders;
+SELECT * FROM deliveries;
+ ```
+
 
 ### 3. **Data Cleaning & Transformation**
 - Handled missing or null values to ensure data quality.
