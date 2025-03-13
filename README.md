@@ -9,10 +9,8 @@ This project demonstrates my SQL skills through the analysis of data for **Zomat
 - Created a `zomato_db` database, including essential tables such as restaurants, orders, customers, etc.
 - Established relationships between tables using primary and foreign keys to ensure referential integrity.
 - 
-```sql
- 
+```sql 
 CREATE DATABASE zomato_db;
-
 ```
 ```sql
 CREATE TABLE customers
@@ -78,18 +76,16 @@ CREATE TABLE diliveries
 ```
 ### 2. **Data Import**
 - Imported a sample dataset that includes business-related information like restaurant details, menu items, customer profiles, and order history.
-  ```sql
+```sql
 SELECT * FROM TABLE_NAME;
-  ```
- ```sql
+```
+```sql
 SELECT * FROM customers;
 SELECT * FROM restuarents;
 SELECT * FROM orders;
 SELECT * FROM riders;
 SELECT * FROM deliveries;
- ```
-
-
+```
 ### 3. **Data Cleaning & Transformation**
 - Handled missing or null values to ensure data quality.
 - Standardized and transformed data for analysis.
