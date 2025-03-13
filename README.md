@@ -4,9 +4,8 @@
 # Analysis & Reports
 
 
-## Q.1
-## Write a query to find the top 5 most frequently ordered dishes by customer called "Arjun Mehta" in the last 1 year.
-'''sql 
+### Q.1 Write a query to find the top 5 most frequently ordered dishes by customer called "Arjun Mehta" in the last 1 year.
+''' sql 
 SELECT 
 	customer_name,
 	dishes,
