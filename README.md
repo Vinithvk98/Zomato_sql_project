@@ -1,5 +1,7 @@
 # SQL Project: Data Analysis for Zomato – A Food Delivery Company
 
+![Zomato](https://github.com/Vinithvk98/Zomato_sql_project/blob/main/zomato.png)
+
 ## Project Overview
 This project demonstrates my SQL skills through the analysis of data for **Zomato**, a leading food delivery company in India. It involves setting up a database, importing data, ensuring data integrity, and solving a series of business problems using complex SQL queries. The goal is to derive meaningful insights from data and solve real-world business challenges using SQL.
 
