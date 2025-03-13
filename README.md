@@ -76,10 +76,10 @@ CREATE TABLE diliveries
 ### 2. **Data Import**
 - Imported a sample dataset that includes business-related information like restaurant details, menu items, customer profiles, and order history.
   ```sql
-  SELECT * FROM TABLE_NAME;
+SELECT * FROM TABLE_NAME;
   ```
  ```sql
-  SELECT * FROM customers;
+SELECT * FROM customers;
 SELECT * FROM restuarents;
 SELECT * FROM orders;
 SELECT * FROM riders;
