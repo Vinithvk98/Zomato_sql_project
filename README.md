@@ -141,12 +141,6 @@ WHERE
 - Database Design and Normalization
 - Data Cleaning and Transformation
 
-## Key Learning Outcomes
-- Proficient in creating and managing SQL databases.
-- Mastery of complex SQL queries for data analysis, aggregation, and reporting.
-- Understanding of database relationships, normalization, and data integrity.
-- Practical application of SQL to solve business challenges.
-
 
 # Analysis & Reports
 
@@ -532,3 +526,8 @@ ON o.restaurant_id = r.restaurant_id
 GROUP BY 1
 ```
 
+## Key Learning Outcomes
+- Proficient in creating and managing SQL databases.
+- Mastery of complex SQL queries for data analysis, aggregation, and reporting.
+- Understanding of database relationships, normalization, and data integrity.
+- Practical application of SQL to solve business challenges.
