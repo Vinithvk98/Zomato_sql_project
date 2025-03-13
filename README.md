@@ -1,7 +1,41 @@
-# SQL Project: Data Analysis for Zomato – A Leading Food Delivery Company
+# SQL Project: Data Analysis for Zomato – A Food Delivery Company
 
 ## Project Overview
-### This project showcases my SQL skills by analyzing data for Zomato, a leading food delivery company in India. It involves setting up a structured database, importing sample data, ensuring data integrity, and solving complex business problems through advanced SQL queries. The project highlights my ability to use SQL for data analysis, problem-solving, and business insights generation.
+This project demonstrates my SQL skills through the analysis of data for **Zomato**, a leading food delivery company in India. It involves setting up a database, importing data, ensuring data integrity, and solving a series of business problems using complex SQL queries. The goal is to derive meaningful insights from data and solve real-world business challenges using SQL.
+
+## Project Structure
+
+### 1. **Database Setup**
+- Created a `zomato_db` database, including essential tables such as restaurants, orders, customers, etc.
+- Established relationships between tables using primary and foreign keys to ensure referential integrity.
+
+### 2. **Data Import**
+- Imported a sample dataset that includes business-related information like restaurant details, menu items, customer profiles, and order history.
+
+### 3. **Data Cleaning & Transformation**
+- Handled missing or null values to ensure data quality.
+- Standardized and transformed data for analysis.
+
+### 4. **Business Problem Solving**
+- Solved 20 business problems related to Zomato’s operations using advanced SQL queries. Example problems include:
+  - Identifying popular restaurants by rating, location, or cuisine.
+  - Analyzing customer ordering behavior and trends.
+  - Estimating delivery times to optimize operations.
+  - Generating insights for improving marketing strategies or customer engagement.
+
+## Key Technologies
+- SQL (Structured Query Language)
+- Database Design and Normalization
+- Data Cleaning and Transformation
+
+## Key Learning Outcomes
+- Proficient in creating and managing SQL databases.
+- Mastery of complex SQL queries for data analysis, aggregation, and reporting.
+- Understanding of database relationships, normalization, and data integrity.
+- Practical application of SQL to solve business challenges.
+
+## Usage Instructions
+1. Clone this repository to your local machine:
 
 # Analysis & Reports
 
